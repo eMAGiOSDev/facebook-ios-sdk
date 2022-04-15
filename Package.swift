@@ -114,13 +114,13 @@ let package = Package(
 )
 
 extension Product {
-    static let basics = library(name: .basics, targets: [.Prefixed.basics])
-    static let core = library(name: .core, targets: [.core, .Prefixed.core])
-    static let login = library(name: .login, targets: [.login])
-    static let share = library(name: .share, targets: [.share, .Prefixed.share])
-    static let gaming = library(name: .gaming, targets: [.gaming, .Prefixed.gaming])
-    static let aem = library(name: .aem, targets: [.aem, .Prefixed.aem])
-    static let tv = library(name: .tv, targets: [.tv])
+    static let basics = library(name: .basics, type: .dynamic, targets: [.Prefixed.basics])
+    static let core = library(name: .core, type: .dynamic, targets: [.core, .Prefixed.core])
+    static let login = library(name: .login, type: .dynamic, targets: [.login])
+    static let share = library(name: .share, type: .dynamic, targets: [.share, .Prefixed.share])
+    static let gaming = library(name: .gaming, type: .dynamic, targets: [.gaming, .Prefixed.gaming])
+    static let aem = library(name: .aem, type: .dynamic, targets: [.aem, .Prefixed.aem])
+    static let tv = library(name: .tv, type: .dynamic, targets: [.tv])
 }
 
 extension Target {
